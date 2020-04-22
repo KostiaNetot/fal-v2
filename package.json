@@ -1,0 +1,26 @@
+{
+  "name": "fresh-arts-line",
+  "version": "2.0.0",
+  "description": "Site for Fresh Arts Line Talent Academy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KostiaNetot/fal_v2.git"
+  },
+  "keywords": [
+    "site",
+    "online",
+    "lessons",
+    "talents",
+    "academy"
+  ],
+  "author": "Kostia Netot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KostiaNetot/fal_v2/issues"
+  },
+  "homepage": "https://github.com/KostiaNetot/fal_v2#readme"
+}
