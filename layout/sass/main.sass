@@ -1,0 +1,34 @@
+@import "fonts"
+@import "settings"
+@import "normalize"
+
+body
+  @extend %body-f
+  background-color: $body-bg
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+
+.row
+  display: flex
+
+.column-2
+  width: 50%
+
+.btn
+  @extend %button
+
+h1
+  @extend %h1-f
+  color: $orange-col
+
+h2
+  @extend %h2-f
+  color: $orange-col
+  text-transform: uppercase
+
+
+@import "header"
+@import "main-page-content"
+@import "about"
