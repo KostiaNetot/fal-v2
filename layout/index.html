@@ -13,6 +13,7 @@
     <div class="container header__container">
       <a href="#" class="main-logo">Logo</a>
       <div class="header__panel">
+        <!-- Desktop Menu -->
         <ul class="header__panel__navigation">
           <li><a class="nav-item nav-item-active" href="index.html">Главная</a></li>
           <li><a class="nav-item" href="about.html">О нас</a></li>
@@ -21,6 +22,22 @@
           <li><a class="nav-item" href="#">Блог</a></li>
           <li><a class="nav-item" href="#">Контакты</a></li>
         </ul>
+        <!-- Mobile Menu -->
+        <div class="" id="underlay"></div>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <ul class="mobile-nav invisible">
+          <li><a class="mobile-nav__item" href="index.html">Главная</a></li>
+          <li><a class="mobile-nav__item" href="about.html">О нас</a></li>
+          <li><a class="mobile-nav__item" href="#">Услуги</a></li>
+          <li><a class="mobile-nav__item" href="#">Галерея</a></li>
+          <li><a class="mobile-nav__item" href="#">Блог</a></li>
+          <li><a class="mobile-nav__item" href="#">Контакты</a></li>
+        </ul>
         <div class="header__panel__social">
           <ul>
             <li><a href="#"><img src="./img/icons/facebook%201.png" alt="facebook"></a></li>
@@ -28,13 +45,13 @@
             <li><a href="#"><img src="./img/icons/youtube%201.png" alt="youtube"></a></li>
           </ul>
         </div>
-        <div class="header__panel__language">
-          <select name="language" id="language">
-            <option value="ru" selected>RU</option>
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-          </select>
-        </div>
+<!--        <div class="header__panel__language">-->
+<!--          <select name="language" id="language">-->
+<!--            <option value="ru" selected>RU</option>-->
+<!--            <option value="es">ES</option>-->
+<!--            <option value="en">EN</option>-->
+<!--          </select>-->
+<!--        </div>-->
       </div>
     </div>
   </header>
@@ -49,5 +66,7 @@
       <a href="#" class="btn">Записаться в академию</a>
     </div>
   </main>
+
+  <script src="./js/burgerMenu.js"></script>
 </body>
 </html>

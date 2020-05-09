@@ -5,6 +5,7 @@ header
   display: flex
   justify-content: space-between
   border-bottom: 1px solid #FFC000
+  flex-direction: row-reverse
 
 .main-logo
   font-size: 60px
@@ -15,9 +16,56 @@ header
   display: flex
   align-items: center
 
-.header__panel__navigation
+.burger
+  position: absolute
+  top: 20px
+  left: 20px
+  width: 38px
+  height: 34px
+  cursor: pointer
+  display: block
+  .burger-line
+    position: absolute
+    width: 100%
+    height: 3px
+    background-color: lighten($orange-col, 10%)
+    top: 0
+    left: 0
+  .burger-line:nth-child(2),
+  .burger-line:nth-child(3)
+    top: 11px
+  .burger-line:nth-child(4)
+    top: 22px
+.underlay
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  opacity: 0.5
+  pointer-events: auto
+  background-color: #000000
+  transition: .3s
+
+.mobile-nav
+  position: absolute
+  top: 70px
+  left: 0
   display: flex
+  flex-direction: column
+  padding: 10px 20px
   @extend %nav-f
+  color: $orange-col
+  background-color: rgba(255, 255, 255, 0.2)
+  z-index: 100
+  li
+    padding: 19px 0
+  a
+    padding: 19px 50px
+
+.header__panel__navigation
+  @extend %nav-f
+  display: none
   .nav-item
     margin-right: 20px
     position: relative
@@ -43,6 +91,7 @@ header
 
 .header__panel__social ul
   display: flex
+  display: none
   img
     margin: 3px
     opacity: 0.9

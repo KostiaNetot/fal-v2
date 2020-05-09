@@ -14,6 +14,7 @@
   <div class="container header__container">
     <a href="index.html" class="main-logo">Logo</a>
     <div class="header__panel">
+      <!-- Desktop Menu -->
       <ul class="header__panel__navigation">
         <li><a class="nav-item" href="index.html">Главная</a></li>
         <li><a class="nav-item nav-item-active" href="about.html">О нас</a></li>
@@ -22,6 +23,22 @@
         <li><a class="nav-item" href="#">Блог</a></li>
         <li><a class="nav-item" href="#">Контакты</a></li>
       </ul>
+      <!-- Mobile Menu -->
+      <div class="" id="underlay"></div>
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+      <ul class="mobile-nav invisible">
+        <li><a class="mobile-nav__item" href="index.html">Главная</a></li>
+        <li><a class="mobile-nav__item" href="about.html">О нас</a></li>
+        <li><a class="mobile-nav__item" href="#">Услуги</a></li>
+        <li><a class="mobile-nav__item" href="#">Галерея</a></li>
+        <li><a class="mobile-nav__item" href="#">Блог</a></li>
+        <li><a class="mobile-nav__item" href="#">Контакты</a></li>
+      </ul>
       <div class="header__panel__social">
         <ul>
           <li><a href="#"><img src="./img/icons/facebook%201.png" alt="facebook"></a></li>
@@ -29,13 +46,13 @@
           <li><a href="#"><img src="./img/icons/youtube%201.png" alt="youtube"></a></li>
         </ul>
       </div>
-      <div class="header__panel__language">
-        <select name="language" id="language">
-          <option value="ru" selected>RU</option>
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-        </select>
-      </div>
+<!--      <div class="header__panel__language">-->
+<!--        <select name="language" id="language">-->
+<!--          <option value="ru" selected>RU</option>-->
+<!--          <option value="es">ES</option>-->
+<!--          <option value="en">EN</option>-->
+<!--        </select>-->
+<!--      </div>-->
     </div>
   </div>
 </header>
@@ -57,7 +74,6 @@
 
   <!-- Features----------- -->
   <section class="row about-features">
-
     <div class="about-features__item">
       <div class="text">
         <h3>Почему мы</h3>
@@ -81,16 +97,113 @@
     <div class="about-features__item">
       <div class="text">
         <h3>Уникальность</h3>
-        <p>Учитечь в любой точке мира. Переключайтесь между вашим компьютером, планшетом или мобильным устройством.</p>
+        <p>Учитель в любой точке мира. Переключайтесь между вашим компьютером, планшетом или мобильным устройством.</p>
       </div>
       <div class="picture">
         <img src="./img/about/features/teacher.png" alt="teacher">
       </div>
     </div>
-
   </section>
-
+<!------------ About Team ------------>
+  <section class="row about-team">
+    <div class="container">
+      <h2>Наша команда</h2>
+      <div class="team-slider">
+        <div class="team-slider__tape">
+          <div class="team-slider__item">
+            <img src="./img/about/slider/team-slider-1.jpg" alt="team-member">
+            <div class="info">
+              <h3>Алла Мишакова</h3>
+              <p class="speciality">Саксофон и вокал</p>
+              <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra orci orci tellus mattis ut nunc morbi habitant massa. Enim amet ornare turpis maecenas id massa et arcu. Sed in ac sit dui. Sed gravida at eget elit lacus adipiscing est.</p>
+              <svg width="271" height="69" viewBox="0 0 271 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 69C0 69 160.013 62.391 212.929 48.9179C265.845 35.4448 271 0 271 0V32V59C271 64.5229 266.523 69 261 69H0Z" fill="url(#paint0_linear)"/>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="267.477" y1="1.66868" x2="126.164" y2="165.253" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFC000"/>
+                    <stop offset="1" stop-color="#FF8A00"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="team-slider__item">
+            <img src="./img/about/slider/team-slider-2.jpg" alt="team-member">
+            <div class="info">
+              <h3>Андрей Мишаков</h3>
+              <p class="speciality">Саксофон</p>
+              <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra orci orci tellus mattis ut nunc morbi habitant massa. Enim amet ornare turpis maecenas id massa et arcu. Sed in ac sit dui. Sed gravida at eget elit lacus adipiscing est.</p>
+              <svg width="271" height="69" viewBox="0 0 271 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 69C0 69 160.013 62.391 212.929 48.9179C265.845 35.4448 271 0 271 0V32V59C271 64.5229 266.523 69 261 69H0Z" fill="url(#paint0_linear)"/>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="267.477" y1="1.66868" x2="126.164" y2="165.253" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFC000"/>
+                    <stop offset="1" stop-color="#FF8A00"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="team-slider__item">
+            <img src="./img/about/slider/team-slider-3.jpg" alt="team-member">
+            <div class="info">
+              <h3>Галина Алексеенко</h3>
+              <p class="speciality">Фортепиано</p>
+              <p class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra orci orci tellus mattis ut nunc morbi habitant massa. Enim amet ornare turpis maecenas id massa et arcu. Sed in ac sit dui. Sed gravida at eget elit lacus adipiscing est.</p>
+              <svg width="271" height="69" viewBox="0 0 271 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 69C0 69 160.013 62.391 212.929 48.9179C265.845 35.4448 271 0 271 0V32V59C271 64.5229 266.523 69 261 69H0Z" fill="url(#paint0_linear)"/>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="267.477" y1="1.66868" x2="126.164" y2="165.253" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFC000"/>
+                    <stop offset="1" stop-color="#FF8A00"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <div class="dots__item"></div>
+          <div class="dots__item"></div>
+          <div class="dots__item"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col footer__logo">
+        <a href="index.html" class="main-logo">Logo</a>
+        <a href="#" class="btn">Записаться в академию</a>
+      </div>
+      <div class="col footer__contacts">
+        <h4>Наши контакты</h4>
+        <p>+38 063 286 52 77</p>
+        <p>+34 691 71 33 98</p>
+        <p>freshartline@gmail.com</p>
+      </div>
+      <div class="col footer__schedule">
+        <h4>График работы</h4>
+        <p>Пн - Пт: с 10 до 20</p>
+        <p>Сб: с 10 до 19</p>
+      </div>
+      <div class="col footer__social">
+        <ul>
+          <li><a href="#"><img src="./img/icons/facebook%201.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="./img/icons/instagram%201.png" alt="instagram"></a></li>
+          <li><a href="#"><img src="./img/icons/youtube%201.png" alt="youtube"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+    <p>All Rights Reserved | Fresh Arts Line 2020</p>
+  </div>
+</footer>
+
+<script src="./js/burgerMenu.js"></script>
 </body>
 </html>

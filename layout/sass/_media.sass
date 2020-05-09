@@ -1,0 +1,35 @@
+@media (max-width: 767px)
+  .container
+    max-width: 95%
+@media (min-width: 992px)
+  .column-2
+    width: 50%
+  //header
+  .header__container
+    flex-direction: row
+  .mobile-nav, .burger
+    display: none !important
+  .header__panel__navigation
+    display: flex !important
+  //main page content
+  .main-page-content
+    h1
+      font-size: 72px
+    .btn
+      font-size: 24px
+
+  //about
+  .about-intro
+    flex-direction: row
+  .about-features__item
+    flex-direction: row
+    &:nth-child(even)
+      .picture
+        order: -1
+
+  //footer
+  footer
+    .row
+      flex-direction: row
+    .col
+      width: 25%

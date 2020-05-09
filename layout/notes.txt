@@ -1,0 +1,3 @@
+- navigation hover lighter color
+- index.html central content a little lower
+- about.html features check the lines

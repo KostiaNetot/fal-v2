@@ -14,10 +14,23 @@ body
   display: flex
 
 .column-2
-  width: 50%
-
+  //width: 50%
+  width: 100%
 .btn
   @extend %button
+
+.invisible
+  opacity: 0
+  pointer-events: none
+  transform: translateX(-100%)
+.rotate45
+  transform: rotate(45deg)
+.rotate-45
+  transform: rotate(-45deg)
+.translateX-0
+  transform: translateX(0)
+.hiddenY
+  overflow-y: hidden
 
 h1
   @extend %h1-f
@@ -32,3 +45,7 @@ h2
 @import "header"
 @import "main-page-content"
 @import "about"
+
+@import "footer"
+
+@import "media"
