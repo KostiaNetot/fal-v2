@@ -1,3 +1,21 @@
 - navigation hover lighter color
 - index.html central content a little lower
 - about.html features check the lines
+
+
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+
+gulp.task('sass', function(){
+  return gulp.src('./fal_v2/layout/sass/main.sass')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./fal_v2/layout/sass/main.sass', ['sass']);
+});
+
+gulp.task('test', function() {
+  console.log('GULPPPPPP');
+});
