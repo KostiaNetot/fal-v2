@@ -1,0 +1,83 @@
+@media (max-width: 767px)
+  //about
+  .about-features__item
+    p::after
+      display: none
+    h3::after
+      display: none
+  //footer
+  footer
+    .col
+      width: 100%
+      padding-left: 0
+      align-items: center
+      margin-bottom: 24px
+@media (min-width: 768px)
+  .container
+    max-width: 750px
+  //about
+  .about-features__item
+    flex-direction: row
+    &:nth-child(even)
+      .picture
+        order: -1
+  //footer
+  footer
+    .row
+      flex-direction: row
+      flex-wrap: wrap
+    .col
+      width: 50%
+@media only screen and (min-width: 768px) and (max-width: 991px)
+  footer
+    .footer__logo
+      order: 1
+      align-items: center
+    .footer__social
+      order: 2
+      justify-content: center
+      align-items: center
+    .footer__schedule
+      order: 3
+      padding-top: 26px
+    .footer__contacts
+      order: 4
+      padding-top: 26px
+@media (min-width: 992px)
+  .container
+    max-width: 970px
+  .column-2
+    width: 50%
+  //header
+  div.header__container
+    flex-direction: row
+  .mobile-nav, .burger
+    display: none !important
+  .header__panel__navigation
+    display: flex !important
+  //main page content
+  .main-page-content
+    h1
+      font-size: 72px
+    .btn
+      font-size: 24px
+
+  //about
+  .about-intro
+    flex-direction: row
+  .about-features__item
+    flex-direction: row
+    &:nth-child(even)
+      .picture
+        order: -1
+
+  //footer
+  footer
+    .row
+      flex-direction: row
+    .col
+      width: 25%
+
+@media (min-width: 1200px)
+  .container
+    max-width: 1170px

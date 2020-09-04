@@ -1,0 +1,67 @@
+@import "fonts"
+@import "settings"
+@import "normalize"
+
+body
+  @extend %body-f
+  background-color: $body-bg
+
+.container
+  max-width: 95%
+  margin: 0 auto
+
+.row
+  display: flex
+
+.column-2
+  //width: 50%
+  width: 100%
+.btn
+  @extend %button
+
+.invisible
+  opacity: 0
+  pointer-events: none
+  transform: translateX(-100%)
+.rotate45
+  transform: rotate(45deg)
+.rotate-45
+  transform: rotate(-45deg)
+.translateX-0
+  transform: translateX(0)
+.hiddenY
+  overflow-y: hidden
+
+h1
+  @extend %h1-f
+  color: $orange-col
+
+h2
+  @extend %h2-f
+  color: $orange-col
+  text-transform: uppercase
+
+  .fade-enter, .fade-exit
+  transition: opacity 250ms ease-out
+
+.fade-enter
+  opacity: 0.01
+
+.fade-enter.fade-enter-active
+  opacity: 1
+
+.fade-exit
+  opacity: 1
+
+.fade-exit-active
+  opacity: 0.01
+
+@import "header"
+@import "main-page-content"
+@import "about"
+@import "services"
+@import "service-description"
+
+@import "footer"
+
+@import "media"
