@@ -4,7 +4,7 @@ import './sass/main.sass';
 import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import MainPage from "./pages/main-page/MainPage";
-import AboutPage from "./pages/AboutPage";
+import AboutPage from "./pages/about-page/AboutPage";
 import ServicesPage from "./pages/ServicesPages";
 
 const AnimatedSwitch = withRouter(({ location }) => (
