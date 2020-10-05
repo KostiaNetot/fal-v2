@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../sass/_header.sass';
 import logo from './logo.png'
 import {Link, NavLink} from "react-router-dom";
+import BurgerButton from "../burger-button/BurgerButton";
 
 const Header = () => {
+
+  const [clicked, setClicked] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <React.Fragment>
       <header>
@@ -22,20 +30,13 @@ const Header = () => {
               {/*<li><a className="nav-item" href="#">Контакты</a></li>*/}
             </ul>
             {/*Mobile Menu*/}
-            <div className="" id="underlay"></div>
-            <div className="burger" id="burger">
-              <span className="burger-line"></span>
-              <span className="burger-line"></span>
-              <span className="burger-line"></span>
-              <span className="burger-line"></span>
-            </div>
-            <ul className="mobile-nav invisible">
-              <li><a className="mobile-nav__item" href="index.html">Главная</a></li>
-              <li><a className="mobile-nav__item" href="about.html">О нас</a></li>
-              <li><a className="mobile-nav__item" href="#">Услуги</a></li>
-              <li><a className="mobile-nav__item" href="#">Галерея</a></li>
-              <li><a className="mobile-nav__item" href="#">Блог</a></li>
-              <li><a className="mobile-nav__item" href="#">Контакты</a></li>
+
+            <BurgerButton clicked={clicked} toggleMobileMenu={toggleMobileMenu} />
+
+            <ul className={clicked ? 'mobile-nav' : 'mobile-nav invisible'}>
+              <li><NavLink to='/main' className="mobile-nav__item">Главная</NavLink></li>
+              <li><NavLink to='/about' className="mobile-nav__item">О нас</NavLink></li>
+              <li><NavLink to='/services' className="mobile-nav__item">Услуги</NavLink></li>
             </ul>
             <div className="header__panel__social">
               <ul>

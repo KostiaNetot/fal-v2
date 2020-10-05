@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Header from "../../components/header/Header";
+import Button from "../../components/button/Button";
 
 const MainPage = () => {
 
@@ -36,7 +37,8 @@ const MainPage = () => {
 
         <div className="main-page-content">
           <h1>Follow our line - the<br/> Fresh Arts Line</h1>
-          <a href="#" className="btn">Записаться в академию</a>
+          {/*<a href="#" className="btn">Записаться в академию</a>*/}
+          <Button className="btn"/>
         </div>
       </main>
     </div>

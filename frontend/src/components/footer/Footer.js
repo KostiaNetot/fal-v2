@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.png';
+import Button from "../button/Button";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
             <a href="index.html" className="main-logo">
               <img src={logo} alt="logo"/>
             </a>
-            <a href="#" className="btn">Записаться в академию</a>
+            <Button className='btn'/>
           </div>
           <div className="col footer__contacts">
             <h4>Наши контакты</h4>
