@@ -8,6 +8,7 @@ import AboutFeature from "../../components/about-feature/AboutFeature";
 import AboutTeamMember from "../../components/about-team-member/AboutTeamMember";
 import aboutData from './about-data';
 import circle from './about-img/features/circle.png';
+import Popup from "../../components/popup/Popup";
 
 const AboutPage = () => {
 
@@ -22,6 +23,9 @@ const AboutPage = () => {
   return (
     <div>
       <Header/>
+
+      <Popup/>
+
       <main>
         {/*About-intro*/}
         <section className="row about-intro">
